@@ -53,6 +53,7 @@ html {
 .calculator {
     display: flex;
     flex-direction: column;
+    background-color: rgb(211, 196, 183);
 }
 
 #panel {
@@ -70,6 +71,7 @@ html {
     width: 50%;
     height: 70%;
     margin: 0 20px;
+    transition: all 1s ease;
 }
 
 #left-panel {
@@ -91,11 +93,34 @@ html {
 #left-panel button {
     width: 30%;
     height: 70%;
+    transition: all 1s ease;
 }
 
 #right-panel button {
     width: 70%;
     height: 20%;
+    border-radius: 100%;
+    
+}
+
+button {
+    border: solid 1px rgb(114, 113, 113);
+}
+
+#left-panel button:hover {
+    background-color: lightblue;
+}
+
+#right-panel button:hover {
+    background-color: lightgreen;
+}
+
+#clear:hover {
+    background-color: pink;
+}
+
+#clearAll:hover {
+    background-color: brown;
 }
 
 #screen1 {
@@ -108,4 +133,28 @@ html {
 
 button {
     font-size: 30px;
+}
+
+.buttonClickedLeft {
+    transform: scale(1.1);
+    border: solid 3px blue;
+    background-color: lightblue;
+}
+
+.buttonClickedRight {
+    transform: scale(1.1);
+    border: solid 3px green;
+    background-color: lightgreen;
+}
+
+.buttonClickedClear {
+    transform: scale(1.1);
+    border: solid 3px red;
+    background-color: pink;
+}
+
+.buttonClickedClearAll {
+    transform: scale(1.1);
+    border: solid 3px rgb(83, 25, 25);
+    background-color: brown;
 }

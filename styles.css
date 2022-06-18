@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: myFont;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(Calculator.ttf);
 }
 
 html {
@@ -98,4 +104,8 @@ html {
 
 #screen2 {
     height: 70%;
+}
+
+button {
+    font-size: 30px;
 }

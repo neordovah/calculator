@@ -71,7 +71,6 @@ html {
     width: 50%;
     height: 70%;
     margin: 0 20px;
-    transition: all 1s ease;
 }
 
 #left-panel {
@@ -93,7 +92,6 @@ html {
 #left-panel button {
     width: 30%;
     height: 70%;
-    transition: all 1s ease;
 }
 
 #right-panel button {
@@ -157,4 +155,10 @@ button {
     transform: scale(1.1);
     border: solid 3px rgb(83, 25, 25);
     background-color: brown;
+}
+
+.buttonClickedEqual {
+    transform: scale(1.1);
+    border: solid 3px orange;
+    background-color: yellow;
 }

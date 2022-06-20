@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: myFont;
+    font-family: myFont, Arial, Helvetica, sans-serif;
 }
 
 @font-face {
@@ -48,6 +48,27 @@ html {
     height: 25%;
     background-color: lightgray;
     border-bottom: solid 20px grey;
+    display: flex;
+    flex-direction: column;
+}
+
+#screen1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+    padding: 0 10px;
+    color: rgb(41, 40, 40);
+    height: 30%;
+}
+
+#screen2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 50px;
+    padding: 0 10px;
+    height: 70%;
 }
 
 .calculator {
@@ -103,22 +124,6 @@ html {
 
 button {
     border: solid 1px rgb(114, 113, 113);
-}
-
-#left-panel button:hover {
-    background-color: lightblue;
-}
-
-#right-panel button:hover {
-    background-color: lightgreen;
-}
-
-#clear:hover {
-    background-color: pink;
-}
-
-#clearAll:hover {
-    background-color: brown;
 }
 
 #screen1 {
